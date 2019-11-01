@@ -14,17 +14,34 @@ public class Main {
         }
     }
 
+    public static boolean isLeapYear(int year){
+        if (year%4==0 && (year%100!=0 || year%400==0)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public static boolean isLater(int month1, int day1, int year1, int month2, int day2, int year2){
+        if(year1>=year2){
+            if
+            return true;
+        }
+    }
+
+
     public static void main(String[] args) {
         double wages = totalWages(45, 12.5);
         System.out.println("Wages for 45 hours at $12.50 " + wages);
         wages = totalWages(30, 10);
         System.out.println("Wages for 30 hours at $10.00 " + wages);
 
-// leap year
-//        System.out.println("2000 " + isLeapYear(2000));
-//        System.out.println("2004 " + isLeapYear(2004));
-//        System.out.println("2003 " + isLeapYear(2003));
-//        System.out.println("2100 " + isLeapYear(2100));
+ //leap year
+        System.out.println("2000 " + isLeapYear(2000));
+        System.out.println("2004 " + isLeapYear(2004));
+        System.out.println("2003 " + isLeapYear(2003));
+        System.out.println("2100 " + isLeapYear(2100));
 
 
 // is later
